@@ -1,0 +1,3 @@
+sudo nginx -t -c /home/savely/Documents/projects/services/html_generator/nginx.conf
+
+sudo nginx -c /home/savely/Documents/projects/services/html_generator/nginx.conf

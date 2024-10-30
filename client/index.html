@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Placeholder</title>
+    <script type="module" src="/src/main.ts" defer></script>
+  </head>
+  <body>
+    <div class="overflox-y">
+      <header class="main-header">
+        <label class="main-header__label" for="">HTML Placeholder</label>
+        <nav class="main-header__nav">
+          <a href="#mission">Mission</a>
+          <a href="#documentation">Documentation</a>
+          <a href="#support">Support</a>
+        </nav>
+      </header>
+      <main class="main">
+        <div class="segment">
+          <h2>Short Introduction</h2>
+          <p>
+            Welcome to HTML Placeholder, your go-to tool for quickly generating
+            HTML structures with ease. Whether you're prototyping, designing, or
+            developing, this tool helps streamline your workflow and enhance
+            productivity. It’s not just a simple generator; it’s a powerful
+            instrument that assists developers and designers in testing their
+            projects directly on websites, ensuring everything functions as
+            intended.
+          </p>
+        </div>
+        <div class="grid-two-columns">
+          <div class="segment">
+            <h2>How It Works</h2>
+            <p>
+              Using Emmet-like syntax, you can quickly create HTML skeletons.
+              Simply type commands like <code>div*3>img</code> and watch the
+              magic happen as it expands into fully structured HTML elements.
+              This intuitive approach minimizes the time spent on repetitive
+              coding tasks, allowing you to focus on what really matters—your
+              design and development.
+            </p>
+          </div>
+          <div class="segment" id="features">
+            <h2>Features</h2>
+            <p>HTML Placeholder offers a variety of features including:</p>
+            <ul>
+              <li>Rapid HTML scaffolding</li>
+              <li>Customizable templates</li>
+              <li>Real-time preview</li>
+              <li>Export options</li>
+              <li>
+                Seamless integration for testing and developing on live sites
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="segment" id="mission">
+          <h2>Mission</h2>
+          <p>
+            Our mission is to simplify the process of creating HTML structures,
+            enabling developers and designers to focus more on creativity and
+            less on repetitive coding tasks. We aim to provide a robust tool
+            that not only assists in generating HTML but also serves as a
+            reliable instrument for developing and testing directly on websites.
+            By empowering users with an efficient workflow, we strive to enhance
+            the overall design and development experience.
+          </p>
+        </div>
+        <div class="segment" id="documentation">
+          <h2>Documentation</h2>
+          <section id="getting-started">
+            <h3>Getting Started</h3>
+            <p>
+              To start using the HTML Placeholder, simply navigate to the API
+              endpoint and provide your Emmet command. For example:
+            </p>
+            <pre><code>GET domain.com/api/create/div*3>img</code></pre>
+            <p>
+              This will generate the HTML for three div elements, each
+              containing an img element.
+            </p>
+          </section>
+          <section id="syntax-guide">
+            <h3>Syntax Guide</h3>
+            <p>
+              The syntax for HTML Placeholder follows Emmet conventions. Here
+              are some common examples:
+            </p>
+            <ul>
+              <li>
+                <code>div>ul>li*3</code> - Creates a div with a ul containing
+                three li elements.
+              </li>
+              <li>
+                <code>div#container>p.intro</code> - Creates a div with id
+                "container" containing a p with class "intro".
+              </li>
+              <li>
+                <code>header+section+footer</code> - Creates a header, followed
+                by a section, followed by a footer.
+              </li>
+            </ul>
+          </section>
+          <section id="examples">
+            <h3>Examples</h3>
+            <p>Here are some example commands and their outputs:</p>
+            <pre><code>GET domain.com/api/create/ul>li*5</code></pre>
+            <p>This will generate:</p>
+            <pre><code>&lt;ul&gt;&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;</code></pre>
+          </section>
+          <section id="faq">
+            <h3>FAQ</h3>
+            <p class="highlight">
+              <strong>Q:</strong> Can I get the HTML as a JSON string?
+            </p>
+            <p class="highlight">
+              <strong>A:</strong> Yes, by adding <code>/true</code> to your
+              request. For example:
+            </p>
+            <pre><code>GET domain.com/api/create/div*3>img/true</code></pre>
+          </section>
+          <section id="contact">
+            <h3>Contact</h3>
+            <p>
+              If you have any questions or need support, please contact us at
+              <a href="mailto:support@example.com">support@example.com</a>.
+            </p>
+          </section>
+        </div>
+        <div class="segment" id="test">
+          <h2>Try yourself</h2>
+          <p>
+            To test the HTML Placeholder, simply navigate to the API endpoint
+            and provide your Emmet command. For example:
+          </p>
+          <p>
+            <code>GET domain.com/api/create/div*3>img</code>
+          </p>
+          <div>
+            <div>
+              <input
+                id="test-input"
+                type="text"
+                placeholder="Type any emmet command"
+              />
+              <button id="test-btn">Generate</button>
+            </div>
+            <textarea
+              id="test-output"
+              readonly
+              placeholder="There would be a result"
+            ></textarea>
+            <button id="copy-btn">Copy</button>
+          </div>
+        </div>
+        <div class="segment" id="support">
+          <h2>Support</h2>
+          <p>
+            If you encounter any issues or have questions, please visit our
+            <a href="#documentation">Documentation</a> or
+            <a href="#contact">Contact</a> us for support. We are committed to
+            helping you make the most of our tool and ensure you have a seamless
+            experience while developing and testing your projects.
+          </p>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <h3 class="footer__title">Project Made for Fun</h3>
+          <p class="footer__support">
+            If you want to support me, please visit my
+            <a href="https://example.com/support" class="footer__link"
+              >support page</a
+            >.
+          </p>
+          <div class="footer__socials">
+            <a
+              href="https://example.com/facebook"
+              class="footer__social-link"
+              aria-label="Facebook"
+              >Facebook</a
+            >
+            <a
+              href="https://example.com/twitter"
+              class="footer__social-link"
+              aria-label="Twitter"
+              >Twitter</a
+            >
+            <a
+              href="https://example.com/instagram"
+              class="footer__social-link"
+              aria-label="Instagram"
+              >Instagram</a
+            >
+          </div>
+          <p class="footer__copyright">
+            © 2024 Your Name. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
