@@ -1,3 +1,5 @@
-sudo nginx -t -c /home/savely/Documents/projects/services/html_generator/nginx.conf
+sudo nginx -t -c ~{ current dir }/nginx.conf
 
-sudo nginx -c /home/savely/Documents/projects/services/html_generator/nginx.conf
+sudo nginx -c ~{ current dir }/nginx.conf
+
+to start a server cd ~{ current dir }/server > commacd npm run start
