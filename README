@@ -1,5 +1,69 @@
-sudo nginx -t -c ~{ current dir }/nginx.conf
+# 🌟 HTML Generator 🌟
 
-sudo nginx -c ~{ current dir }/nginx.conf
+## Description
+**HTML Generator** is a powerful application developed using **Vite** and **TypeScript** on the client side, along with **Express** and **TypeScript** on the server side. It provides a user-friendly interface for generating HTML code, allowing developers to quickly and efficiently create web pages.
 
-to start a server cd ~{ current dir }/server > commacd npm run start
+## 📁 Project Structure
+- **client/** - The client side, built with **Vite** and **TypeScript**.
+- **server/** - The server side, written with **Express** and **TypeScript**.
+- **nginx.conf** - The configuration file for **Nginx**.
+
+## 🚀 Installation and Setup
+
+### 1. Install Dependencies
+Navigate to the `client` and `server` directories, then install the dependencies using the following commands:
+
+```bash
+cd client
+npm install
+
+cd ../server
+npm install
+2. Build the Client Side
+To build the client side of the application, run the following command:
+
+bash
+Копировать код
+cd client
+npm run build
+The built files will be placed in the dist directory, ready for deployment.
+
+3. Start the Server Side
+You can start the server side using the command:
+
+bash
+Копировать код
+cd server
+npm start
+4. Configure Nginx
+Before launching Nginx, make sure to update the configuration in the nginx.conf file by replacing all the paths with your own. This is crucial for the application to function correctly.
+
+Check Nginx Configuration
+Before starting Nginx, check the configuration with the following command:
+
+bash
+Копировать код
+sudo nginx -t -c ~/html_generator/nginx.conf
+If the check is successful, you will see a message indicating that there are no errors in the configuration.
+
+Start Nginx
+After a successful check, start Nginx with your configuration:
+
+bash
+Копировать код
+sudo nginx -c ~/html_generator/nginx.conf
+🌐 Usage
+Once the server and Nginx are running, you can access the application through your browser at: http://<your_address>:<port>. Simply enter this address in the address bar, and you will land on the application's main page.
+
+📜 License
+This project is licensed under the MIT License. Feel free to use, modify, and distribute!
+
+🎉 Thank you for using HTML Generator! We hope this application aids you in your development endeavors. If you have any questions or suggestions, please don't hesitate to reach out!
+
+markdown
+Копировать код
+
+### Notes
+- Emojis are included for visual appeal and engagement.
+- The content is structured for better readability.
+- Ensure you replace `<your_address>:<port>` with the appropriate address and port of your server.
