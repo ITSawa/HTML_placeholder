@@ -1,11 +1,10 @@
 @use "./mixins" as mixins;
 @use "sass:color";
 
-// New color palette
-$background-color: #2e2e2e; // Darker background for improved contrast
-$text-color: #e9e9e9; // Softer white for better readability
-$primary-color: #9085f3; // Vibrant orange for primary elements
-$secondary-color: #d478ce; // Warm coral for secondary actions
+$background-color: #2e2e2e;
+$text-color: #e9e9e9;
+$primary-color: #9085f3;
+$secondary-color: #d478ce;
 
 *,
 *::before,
@@ -46,7 +45,7 @@ body {
     left: -10%;
     width: 120%;
     height: 120%;
-    // background-image: url("https://canto-wp-media.s3.amazonaws.com/app/uploads/2019/07/19194417/insert-image-html.jpg");
+
     background-image: url("https://img.freepik.com/premium-photo/abstract-purple-binary-code-background_684882-1149.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,40 +54,6 @@ body {
     z-index: -1;
   }
 }
-
-// body {
-//   margin: 0;
-//   line-height: 1.5;
-//   color: $text-color;
-//   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-//     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-//     sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-//   position: relative;
-//   overflow-x: hidden;
-//   width: 100vw;
-//   height: 100vh;
-//   background-color: $background-color;
-
-//   &::before {
-//     content: "";
-//     position: fixed;
-//     top: -10%;
-//     left: -10%;
-//     width: 120%;
-//     height: 120%;
-//     background-image: linear-gradient(
-//       to top right,
-//       $primary-color,
-//       $secondary-color
-//     );
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     filter: blur(100px) brightness(80%);
-//     z-index: -1;
-//   }
-// }
 
 .overflox-y {
   margin: 0 auto;
@@ -330,7 +295,7 @@ p {
   }
 
   ul {
-    padding-left: 20px; // Add padding for list items
+    padding-left: 20px;
     margin-bottom: 20px;
 
     li {
@@ -340,50 +305,40 @@ p {
   }
 
   pre {
-    background-color: rgba(
-      255,
-      255,
-      255,
-      0.1
-    ); // Slightly transparent background
+    background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid
       color.adjust($primary-color, $lightness: -20%, $saturation: -50%);
-    border-radius: 5px; // Rounded corners
-    padding: 15px; // Padding inside code block
-    overflow-x: auto; // Allow horizontal scrolling
-    margin: 15px 0; // Space around code block
+    border-radius: 5px;
+    padding: 15px;
+    overflow-x: auto;
+    margin: 15px 0;
     color: $text-color;
 
     code {
       font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
-      white-space: pre; // Preserve whitespace
+      white-space: pre;
     }
   }
 
   strong {
-    color: $secondary-color; // Highlight important text
+    color: $secondary-color;
   }
 
   a {
-    color: $primary-color; // Maintain link color consistency
+    color: $primary-color;
     transition: color 0.2s ease-in-out;
 
     &:hover {
-      color: $secondary-color; // Hover effect for links
+      color: $secondary-color;
     }
   }
 
   .highlight {
-    background-color: rgba(
-      255,
-      255,
-      255,
-      0.2
-    ); // Highlight background for important sections
-    border-left: 4px solid $secondary-color; // Emphasize important text
-    padding: 10px 15px; // Padding for highlighted area
-    margin: 10px 0; // Margin around highlighted section
+    background-color: rgba(255, 255, 255, 0.2);
+    border-left: 4px solid $secondary-color;
+    padding: 10px 15px;
+    margin: 10px 0;
   }
 }
 
@@ -473,9 +428,9 @@ button {
 }
 
 * {
-  scrollbar-width: thin; /* Firefox */
+  scrollbar-width: thin;
   scrollbar-color: $primary-color
-    color.scale($background-color, $lightness: -20%); /* Firefox */
+    color.scale($background-color, $lightness: -20%);
 }
 
 ::-webkit-scrollbar {
