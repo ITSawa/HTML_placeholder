@@ -23,7 +23,7 @@ npm install
 To build the client side of the application, run the following command:
 
 bash
-Копировать код
+
 cd client
 npm run build
 The built files will be placed in the dist directory, ready for deployment.
@@ -32,7 +32,7 @@ The built files will be placed in the dist directory, ready for deployment.
 You can start the server side using the command:
 
 bash
-Копировать код
+
 cd server
 npm start
 4. Configure Nginx
@@ -42,7 +42,7 @@ Check Nginx Configuration
 Before starting Nginx, check the configuration with the following command:
 
 bash
-Копировать код
+
 sudo nginx -t -c ~/html_generator/nginx.conf
 If the check is successful, you will see a message indicating that there are no errors in the configuration.
 
@@ -50,7 +50,7 @@ Start Nginx
 After a successful check, start Nginx with your configuration:
 
 bash
-Копировать код
+
 sudo nginx -c ~/html_generator/nginx.conf
 🌐 Usage
 Once the server and Nginx are running, you can access the application through your browser at: http://<your_address>:<port>. Simply enter this address in the address bar, and you will land on the application's main page.
@@ -61,7 +61,7 @@ This project is licensed under the MIT License. Feel free to use, modify, and di
 🎉 Thank you for using HTML Generator! We hope this application aids you in your development endeavors. If you have any questions or suggestions, please don't hesitate to reach out!
 
 markdown
-Копировать код
+
 
 ### Notes
 - Emojis are included for visual appeal and engagement.
